@@ -4,6 +4,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import methodOverride from 'method-override';
 import session from 'express-session';
+import MongoStore from 'connect-mongo';
 import flash from 'connect-flash';
 import connectDB from './config/db.js';
 import User from './models/User.js';
@@ -43,6 +44,11 @@ app.use(
     secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: false,
+    store: MongoStore.create({
+      mongoUrl: process.env.MONGO_URI,
+      collectionName: 'sessions',
+      ttl: 60 * 60 * 24, // 1 day, matches cookie maxAge below
+    }),
     cookie: {
       maxAge: 1000 * 60 * 60 * 24, // 1 day
       secure: process.env.NODE_ENV === 'production', // HTTPS-only cookie in production
