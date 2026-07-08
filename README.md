@@ -11,7 +11,6 @@ A resource-sharing platform where students post, discover, and organize academic
 [![MongoDB](https://img.shields.io/badge/MongoDB-Mongoose-47A248?logo=mongodb&logoColor=white)](https://www.mongodb.com/)
 [![Cloudinary](https://img.shields.io/badge/Cloudinary-File%20Storage-3448C5?logo=cloudinary&logoColor=white)](https://cloudinary.com/)
 [![GSAP](https://img.shields.io/badge/GSAP-Animations-88CE02?logo=greensock&logoColor=white)](https://gsap.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](#license)
 
 </div>
 
@@ -27,7 +26,6 @@ A resource-sharing platform where students post, discover, and organize academic
 - [Environment Variables](#-environment-variables)
 - [Creating an Admin](#-creating-an-admin)
 - [Roadmap](#-roadmap)
-- [License](#-license)
 
 ---
 
@@ -149,12 +147,6 @@ node scripts/makeAdmin.js <user-email>
 - [ ] Re-upload flow for resources with broken pre-fix Cloudinary URLs
 - [ ] Deployment (Render/Railway) with production env config
 - [ ] Login rate limiting, friendlier validation messages, optional email verification
-
----
-
-## 📄 License
-
-MIT — free to use, modify, and build on. See the [LICENSE](LICENSE) file for details.
 
 ---
 
