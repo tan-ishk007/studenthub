@@ -6,6 +6,9 @@
 
 A resource-sharing platform where students post, discover, and organize academic materials — notes, PDFs, past papers — by semester and subject.
 
+🔗 **Live:** [studenthub-4io3.onrender.com](https://studenthub-4io3.onrender.com)
+*(hosted on Render's free tier — the first load after inactivity may take ~30-60s to spin up)*
+
 [![Node.js](https://img.shields.io/badge/Node.js-18%2B-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
 [![Express](https://img.shields.io/badge/Express-4.19-000000?logo=express&logoColor=white)](https://expressjs.com/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-Mongoose-47A248?logo=mongodb&logoColor=white)](https://www.mongodb.com/)
