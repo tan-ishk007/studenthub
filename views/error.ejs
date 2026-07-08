@@ -1,0 +1,18 @@
+<%- include('partials/header') %>
+
+<div class="row justify-content-center">
+  <div class="col-md-8 col-lg-6">
+    <div class="card doc-sheet mb-4">
+      <div class="card-body p-4 text-center">
+        <div class="call-number mb-2">RECORD NOT FOUND · CODE <%= status %></div>
+        <span class="doc-stamp d-inline-block mb-3"><%= status === 404 ? 'MISFILED' : 'SYSTEM ERROR' %></span>
+        <h2 class="card-title mb-2"><%= title %></h2>
+        <p class="doc-meta mb-4"><%= message %></p>
+        <a href="/resources" class="btn btn-primary">Back to Resources</a>
+        <a href="/" class="btn btn-outline-secondary">Home</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer') %>

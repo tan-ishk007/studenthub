@@ -1,0 +1,42 @@
+<%- include('../partials/header') %>
+
+<div class="row justify-content-center">
+  <div class="col-md-8 col-lg-6">
+    <div class="card shadow-sm">
+      <div class="card-body p-4">
+        <h2 class="card-title mb-3"><%= resource.title %></h2>
+
+        <p class="mb-2">
+          <span class="badge bg-secondary"><%= resource.category %></span>
+          <span class="badge bg-info text-dark">Semester <%= resource.semester %></span>
+        </p>
+
+        <p class="text-muted mb-1"><strong>Subject:</strong> <%= resource.subject %></p>
+        <p class="text-muted mb-3">
+          <strong>Uploaded by:</strong>
+          <%= resource.uploadedBy ? resource.uploadedBy.name : 'Unknown' %>
+        </p>
+
+        <p class="mb-4"><%= resource.description %></p>
+
+        <div class="d-flex flex-wrap gap-2">
+          <a href="/resources/<%= resource._id %>/download" class="btn btn-primary">
+            Download <%= resource.fileName %>
+          </a>
+
+          <a href="/resources" class="btn btn-outline-secondary">Back to Resources</a>
+
+          <% if (currentUser && resource.uploadedBy && (currentUser._id.toString() === resource.uploadedBy._id.toString() || currentUser.role === 'admin')) { %>
+            <a href="/resources/<%= resource._id %>/edit" class="btn btn-outline-secondary">Edit</a>
+            <form action="/resources/<%= resource._id %>?_method=DELETE" method="POST"
+              onsubmit="return confirm('Delete &quot;<%= resource.title %>&quot;? This cannot be undone.');">
+              <button type="submit" class="btn btn-outline-danger">Delete</button>
+            </form>
+          <% } %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('../partials/footer') %>

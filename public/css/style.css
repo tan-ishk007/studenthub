@@ -1,0 +1,409 @@
+/* =========================================================
+   StudentHub — "Register & Answer-Booklet" design system
+   ========================================================= */
+
+:root {
+  --ledger-cream: #efeae0;
+  --ledger-cream-dark: #e4ddcd;
+  --register-maroon: #7a2e2a;
+  --register-maroon-dark: #5f2321;
+  --ink-blue: #22314f;
+  --margin-red: #b33a3a;
+  --chalk-mustard: #d9a441;
+  --slate: #8b8578;
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-mono: "IBM Plex Mono", "Courier New", monospace;
+  --font-body: "IBM Plex Sans", system-ui, sans-serif;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+html,
+body {
+  background-color: var(--ledger-cream);
+  color: var(--ink-blue);
+  font-family: var(--font-body);
+}
+
+/* Faint ruled-paper texture on the page body */
+body {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 35px,
+    rgba(34, 49, 79, 0.05) 36px
+  );
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.card-title {
+  font-family: var(--font-display);
+  color: var(--ink-blue);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: var(--register-maroon);
+}
+a:hover {
+  color: var(--register-maroon-dark);
+}
+
+/* Visible focus state everywhere, keyboard-first */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+.btn:focus-visible {
+  outline: 3px solid var(--chalk-mustard);
+  outline-offset: 2px;
+}
+
+/* ---------------------- Navbar: the register spine ---------------------- */
+.navbar.bg-dark {
+  background-color: var(--register-maroon) !important;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.04),
+    rgba(0, 0, 0, 0.08)
+  );
+  border-bottom: 3px solid var(--register-maroon-dark);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: 0.01em;
+}
+
+.navbar .nav-link {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 0.5rem 0.9rem !important;
+  opacity: 0.92;
+}
+.navbar .nav-link:hover {
+  opacity: 1;
+  color: var(--chalk-mustard) !important;
+}
+
+/* ---------------------- Buttons ---------------------- */
+.btn {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-radius: 3px;
+  padding: 0.55rem 1.1rem;
+}
+
+.btn-primary {
+  background-color: var(--register-maroon);
+  border-color: var(--register-maroon);
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--register-maroon-dark);
+  border-color: var(--register-maroon-dark);
+}
+
+.btn-outline-primary {
+  color: var(--register-maroon);
+  border-color: var(--register-maroon);
+}
+.btn-outline-primary:hover {
+  background-color: var(--register-maroon);
+  border-color: var(--register-maroon);
+}
+
+.btn-outline-secondary {
+  color: var(--ink-blue);
+  border-color: var(--slate);
+}
+.btn-outline-secondary:hover {
+  background-color: var(--ink-blue);
+  border-color: var(--ink-blue);
+}
+
+.btn-outline-danger {
+  color: var(--margin-red);
+  border-color: var(--margin-red);
+}
+.btn-outline-danger:hover {
+  background-color: var(--margin-red);
+  border-color: var(--margin-red);
+}
+
+/* ---------------------- Cards (generic) ---------------------- */
+.card {
+  background-color: #fbf9f4;
+  border: 1px solid rgba(34, 49, 79, 0.12);
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(34, 49, 79, 0.08);
+}
+
+/* ---------------------- Forms: ruled-paper with a red margin rule --- */
+.card form {
+  position: relative;
+  padding-left: 1.1rem;
+  border-left: 2px solid var(--margin-red);
+}
+
+.form-label {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--slate);
+}
+
+.form-control,
+.form-select {
+  background-color: #fffdf8;
+  border: 1px solid rgba(34, 49, 79, 0.2);
+  border-radius: 3px;
+  font-family: var(--font-body);
+}
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--register-maroon);
+  box-shadow: 0 0 0 0.2rem rgba(122, 46, 42, 0.15);
+}
+
+/* ---------------------- Alerts: stamped notices ---------------------- */
+.alert {
+  border-radius: 3px;
+  border: 1px dashed;
+  font-family: var(--font-body);
+}
+.alert-success {
+  background-color: #eef3ea;
+  border-color: #4c7a4c;
+  color: #2f5230;
+}
+.alert-danger {
+  background-color: #f7e9e7;
+  border-color: var(--margin-red);
+  color: var(--register-maroon-dark);
+}
+
+/* ---------------------- Badges ---------------------- */
+.badge {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  border-radius: 2px;
+}
+.badge.bg-secondary {
+  background-color: var(--ink-blue) !important;
+}
+.badge.bg-info {
+  background-color: var(--chalk-mustard) !important;
+  color: var(--ink-blue) !important;
+}
+
+/* ---------------------- Signature: the index / catalog card --------- */
+.index-card {
+  position: relative;
+  background-color: #fbf9f4;
+  border: 1px solid rgba(34, 49, 79, 0.15);
+  border-radius: 2px;
+  box-shadow: 0 2px 6px rgba(34, 49, 79, 0.1);
+  overflow: visible !important;
+}
+
+/* punched hole, top-left */
+.index-card::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--ledger-cream);
+  box-shadow: inset 0 1px 2px rgba(34, 49, 79, 0.35);
+  z-index: 2;
+}
+
+/* dashed tear-perforation edge along the top */
+.index-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 28px;
+  right: 12px;
+  height: 0;
+  border-top: 1px dashed rgba(34, 49, 79, 0.3);
+}
+
+/* corner tab, colored by category via --tab-color set inline in the view */
+.index-card .corner-tab {
+  position: absolute;
+  top: -10px;
+  right: 14px;
+  padding: 2px 10px;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-blue);
+  background: var(--tab-color, var(--chalk-mustard));
+  border-radius: 2px 2px 0 0;
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.index-card .call-number {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--slate);
+  letter-spacing: 0.02em;
+}
+
+.index-card .card-body {
+  padding-top: 1.4rem;
+}
+
+/* ---------------------- Pagination ---------------------- */
+.pagination .page-link {
+  font-family: var(--font-mono);
+  color: var(--ink-blue);
+  border-color: rgba(34, 49, 79, 0.15);
+}
+.pagination .page-item.active .page-link {
+  background-color: var(--register-maroon);
+  border-color: var(--register-maroon);
+}
+.pagination .page-item.disabled .page-link {
+  color: var(--slate);
+}
+
+/* ---------------------- Footer ---------------------- */
+footer.bg-dark {
+  background-color: var(--ink-blue) !important;
+}
+footer p {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+  opacity: 0.85;
+}
+
+/* ---------------------- Password toggle button ---------------------- */
+.toggle-password {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+}
+
+/* ---------------------- Responsive ---------------------- */
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+  .index-card .corner-tab {
+    right: 10px;
+  }
+}
+
+/* ---------------------- Doc sheet: single resource "cover page" ----- */
+.doc-sheet {
+  position: relative;
+  background-color: #fbf9f4;
+  border: 1px solid rgba(34, 49, 79, 0.15);
+  border-radius: 2px;
+  box-shadow: 0 3px 10px rgba(34, 49, 79, 0.12);
+  overflow: visible !important;
+}
+
+/* cloth-bound spine along the top, echoing the navbar */
+.doc-sheet::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 8px;
+  background: var(--register-maroon);
+  border-radius: 2px 2px 0 0;
+}
+
+.doc-sheet .card-body {
+  padding-top: 2rem;
+}
+
+.doc-sheet .call-number {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--slate);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* ink-stamp style category badge, slightly rotated like a real stamp */
+.doc-stamp {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--margin-red);
+  border: 2px solid var(--margin-red);
+  border-radius: 3px;
+  padding: 3px 10px;
+  transform: rotate(-3deg);
+  opacity: 0.85;
+}
+
+/* subtle ruled-paper box for the description */
+.doc-ruled {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 27px,
+    rgba(34, 49, 79, 0.08) 28px
+  );
+  padding: 0.9rem 1rem 0.6rem;
+  border-left: 2px solid var(--margin-red);
+  font-family: var(--font-body);
+  line-height: 28px;
+}
+
+.doc-meta {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--slate);
+}
+.doc-meta strong {
+  color: var(--ink-blue);
+  font-weight: 500;
+}
+
+/* download rendered like a stamped "collect copy" seal */
+.btn-stamp {
+  background-color: var(--chalk-mustard);
+  border: 1px dashed var(--register-maroon-dark);
+  color: var(--ink-blue);
+  font-weight: 600;
+}
+.btn-stamp:hover {
+  background-color: #c9963c;
+  color: var(--ink-blue);
+}

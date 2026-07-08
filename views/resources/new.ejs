@@ -1,0 +1,57 @@
+<%- include('../partials/header') %>
+
+<div class="row justify-content-center">
+  <div class="col-md-8 col-lg-6">
+    <div class="card shadow-sm">
+      <div class="card-body p-4">
+        <h2 class="card-title mb-4 text-center">Upload a Resource</h2>
+        <form action="/resources" method="POST" enctype="multipart/form-data">
+          <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" class="form-control" id="title" name="title" required />
+          </div>
+
+          <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea class="form-control" id="description" name="description" rows="3" required></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="subject" name="subject" required />
+          </div>
+
+          <div class="mb-3">
+            <label for="semester" class="form-label">Semester</label>
+            <select class="form-select" id="semester" name="semester" required>
+              <option value="" disabled selected>Choose semester</option>
+              <% for (let i = 1; i <= 8; i++) { %>
+                <option value="<%= i %>">Semester <%= i %></option>
+              <% } %>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="category" class="form-label">Category</label>
+            <select class="form-select" id="category" name="category" required>
+              <option value="" disabled selected>Choose category</option>
+              <% ['Notes', 'PYQs', 'Books', 'Assignments', 'Coding', 'Lab Files', 'Others'].forEach(cat => { %>
+                <option value="<%= cat %>"><%= cat %></option>
+              <% }) %>
+            </select>
+          </div>
+
+          <div class="mb-4">
+            <label for="file" class="form-label">File</label>
+            <input type="file" class="form-control" id="file" name="file" required />
+            <div class="form-text">PDF, DOC, DOCX, PPT, PPTX, JPG, or PNG.</div>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">Upload</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('../partials/footer') %>

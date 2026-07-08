@@ -1,0 +1,55 @@
+<%- include('../partials/header') %>
+
+<div class="row justify-content-center">
+  <div class="col-md-8 col-lg-6">
+    <div class="card shadow-sm">
+      <div class="card-body p-4">
+        <h2 class="card-title mb-4 text-center">Edit Resource</h2>
+        <form action="/resources/<%= resource._id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+          <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" class="form-control" id="title" name="title" value="<%= resource.title %>" required />
+          </div>
+
+          <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea class="form-control" id="description" name="description" rows="3" required><%= resource.description %></textarea>
+          </div>
+
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="subject" name="subject" value="<%= resource.subject %>" required />
+          </div>
+
+          <div class="mb-3">
+            <label for="semester" class="form-label">Semester</label>
+            <select class="form-select" id="semester" name="semester" required>
+              <% for (let i = 1; i <= 8; i++) { %>
+                <option value="<%= i %>" <%= resource.semester === i ? 'selected' : '' %>>Semester <%= i %></option>
+              <% } %>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="category" class="form-label">Category</label>
+            <select class="form-select" id="category" name="category" required>
+              <% ['Notes', 'PYQs', 'Books', 'Assignments', 'Coding', 'Lab Files', 'Others'].forEach(cat => { %>
+                <option value="<%= cat %>" <%= resource.category === cat ? 'selected' : '' %>><%= cat %></option>
+              <% }) %>
+            </select>
+          </div>
+
+          <div class="mb-4">
+            <label for="file" class="form-label">Replace File (optional)</label>
+            <input type="file" class="form-control" id="file" name="file" />
+            <div class="form-text">Current file: <%= resource.fileName %>. Leave blank to keep it.</div>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">Save Changes</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('../partials/footer') %>
