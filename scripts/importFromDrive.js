@@ -229,6 +229,16 @@ function buildFallbackDescription({ subject, category, semester }) {
   return `A ${category} resource${subjectPart} (Semester ${semester}), imported from Google Drive.`;
 }
 
+// Cloudinary's free plan rejects uploads over 10MB (confirmed by the exact
+// "Max: 10485760" seen in 401 responses). Configurable via env in case the
+// plan changes; skip early rather than burning a download + a failed
+// upload call on files we already know are too big.
+const MAX_UPLOAD_BYTES = parseInt(process.env.CLOUDINARY_MAX_UPLOAD_BYTES, 10) || 10 * 1024 * 1024;
+
+function formatBytes(bytes) {
+  return `${(bytes / (1024 * 1024)).toFixed(1)}MB`;
+}
+
 async function processJob(job, ctx) {
   const { item, pathParts, semester } = job;
   const { drive, uploaderId, report } = ctx;
@@ -248,6 +258,13 @@ async function processJob(job, ctx) {
   // 2. Can we even represent this file type?
   const plan = resolveDownloadPlan(item);
   if (!plan.supported) return skip(plan.reason);
+
+  // 2b. Too big for Cloudinary before we even download it? Drive reports
+  // "size" for regular files (not for native Docs/Slides/Sheets, which get
+  // exported and checked again after download instead — see step 5b).
+  if (item.size && parseInt(item.size, 10) > MAX_UPLOAD_BYTES) {
+    return skip(`file is ${formatBytes(parseInt(item.size, 10))}, exceeds ${formatBytes(MAX_UPLOAD_BYTES)} upload limit — needs manual upload or a Cloudinary plan upgrade`);
+  }
 
   // 3. Semester Detection & Bypass
   let semesterNumber = parseInt(semester, 10);
@@ -318,6 +335,13 @@ try {
     report.failed.push({ file: item.name, path: pathParts.join("/"), stage: "download", error: err.message });
     console.error(`❌ Failed to download "${item.name}": ${err.message}`);
     return;
+  }
+
+  // 5b. Belt-and-suspenders check now that we know the real size — catches
+  // Google-native Docs/Slides/Sheets exports, which Drive doesn't report a
+  // size for upfront (step 2b only sees regular files).
+  if (buffer.length > MAX_UPLOAD_BYTES) {
+    return skip(`exported file is ${formatBytes(buffer.length)}, exceeds ${formatBytes(MAX_UPLOAD_BYTES)} upload limit — needs manual upload or a Cloudinary plan upgrade`);
   }
 
   // 6. Upload to Cloudinary
