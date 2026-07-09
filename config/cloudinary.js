@@ -14,16 +14,23 @@ cloudinary.config({
 const storage = new CloudinaryStorage({
   cloudinary: cloudinary,
   params: (req, file) => {
-    const isImage = ['image/jpeg', 'image/png'].includes(file.mimetype);
+    const mime = file.mimetype ? file.mimetype.toLowerCase() : '';
+    // 🔥 Fix: PDF, JPG, aur PNG sabhi 'image' category mein hone chahiye Cloudinary ke liye
+    const isImageOrPdf = mime.includes('image') || mime.includes('pdf') || file.originalname.toLowerCase().endsWith('.pdf');
 
     return {
       folder: 'studenthub_resources',
-      resource_type: isImage ? 'image' : 'raw',
-      allowed_formats: ['pdf', 'doc', 'docx', 'ppt', 'pptx', 'jpg', 'png'],
+      // Agar image/pdf hai toh 'image', agar docx/pptx hai toh 'raw', ya fir use automatic detect hone do ('auto')
+      resource_type: isImageOrPdf ? 'image' : 'auto', 
+      // Note: 'raw' files ke sath allowed_formats issue karta hai, isliye hum isko basic image/pdf tak generic rakh sakte hain ya skip kar sakte hain
     };
   },
 });
 
 const upload = multer({ storage });
+
+// Named export of the configured client itself, for code that needs to
+// upload outside of an Express multipart request (e.g. scripts/importFromDrive.js).
+export { cloudinary };
 
 export default upload;

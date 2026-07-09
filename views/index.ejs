@@ -1,14 +1,15 @@
 <%- include('partials/header') %>
 
-<div class="row justify-content-center text-center py-4 hero-block">
-  <div class="col-lg-8">
-    <div class="call-number mb-2 hero-label">STUDENT RESOURCE REGISTER</div>
-    <h1 class="display-5 mb-3 hero-title" style="font-weight: 700;">
+<div class="row justify-content-center text-center hero-block">
+  <div class="col-lg-9">
+    <div class="call-number mb-3 hero-label">STUDENT RESOURCE REGISTER</div>
+    <h1 class="hero-title mb-3" style="font-weight: 700;">
       <span class="hero-word">Find</span> <span class="hero-word">and</span> <span class="hero-word">share</span>
-      <span class="hero-word">what</span> <span class="hero-word">your</span> <span class="hero-word">batch</span>
+      <span class="hero-word">what</span> <span class="hero-word">your</span>
+      <span class="hero-word"><em>batch</em></span>
       <span class="hero-word">already</span> <span class="hero-word">made.</span>
     </h1>
-    <p class="doc-meta mb-4 hero-subtitle" style="font-size: 1rem;">
+    <p class="doc-meta mb-4 hero-subtitle mx-auto" style="font-size: 1.05rem; max-width: 46ch;">
       Notes, PYQs, assignments, and lab files — uploaded by students, organized by semester and subject, free to browse.
     </p>
     <div class="d-flex flex-wrap justify-content-center gap-2 mb-2 hero-buttons">
@@ -19,6 +20,16 @@
         <a href="/register" class="btn btn-outline-secondary btn-lg">Create an Account</a>
       <% } %>
     </div>
+  </div>
+</div>
+
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <% for (let r = 0; r < 2; r++) { %>
+      <% ['Notes', 'PYQs', 'Books', 'Assignments', 'Coding', 'Lab Files', 'Others'].forEach(function(cat) { %>
+        <span><%= cat %></span>
+      <% }); %>
+    <% } %>
   </div>
 </div>
 
@@ -43,6 +54,7 @@
 
 <div class="row g-3 mb-4 reveal-row">
   <div class="col-12">
+    <span class="section-kicker">Explore the shelves</span>
     <h5 class="mb-3 category-heading">Browse by category<span class="category-underline"></span></h5>
   </div>
   <% ['Notes', 'PYQs', 'Books', 'Assignments', 'Coding', 'Lab Files', 'Others'].forEach(function(cat) { %>
@@ -56,28 +68,11 @@
   <% }); %>
 </div>
 
-<style>
-  .hero-word { display: inline-block; }
-  .category-heading { position: relative; display: inline-block; }
-  .category-underline {
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    height: 2px;
-    width: 100%;
-    background: var(--register-maroon);
-    transform: scaleX(0);
-    transform-origin: left;
-  }
-  .tilt-card { transform-style: preserve-3d; will-change: transform; }
-</style>
-
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     if (typeof gsap === 'undefined') return;
     gsap.registerPlugin(ScrollTrigger);
 
-    // Respect users who've asked for reduced motion
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
     if (reduceMotion) {
@@ -87,23 +82,14 @@
       return;
     }
 
-    // --- Hero entrance ---
-    const heroTl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+    const heroTl = gsap.timeline({ defaults: { ease: 'power3.out' }, delay: 0.6 });
     heroTl
       .from('.hero-label', { y: -16, opacity: 0, duration: 0.5 })
-      .from(
-        '.hero-word',
-        { y: 24, opacity: 0, rotate: -2, duration: 0.6, stagger: 0.05 },
-        '-=0.2'
-      )
-      .from('.hero-subtitle', { y: 12, opacity: 0, duration: 0.5 }, '-=0.3')
-      .from(
-        '.hero-buttons .btn',
-        { y: 12, opacity: 0, scale: 0.9, duration: 0.5, stagger: 0.1, ease: 'back.out(1.7)' },
-        '-=0.3'
-      );
+      .from('.hero-word', { y: 28, opacity: 0, rotate: -2, duration: 0.65, stagger: 0.05 }, '-=0.2')
+      .from('.hero-subtitle', { y: 12, opacity: 0, duration: 0.5 }, '-=0.35')
+      .from('.hero-buttons .btn', { y: 12, opacity: 0, scale: 0.9, duration: 0.5, stagger: 0.1, ease: 'back.out(1.7)' }, '-=0.3')
+      .from('.marquee-wrap', { opacity: 0, duration: 0.6 }, '-=0.2');
 
-    // --- Count-up stats, once the row scrolls into view ---
     ScrollTrigger.create({
       trigger: '.stat-number',
       start: 'top 85%',
@@ -116,15 +102,12 @@
             val: target,
             duration: 1.2,
             ease: 'power1.out',
-            onUpdate: () => {
-              el.textContent = Math.round(counter.val);
-            },
+            onUpdate: () => { el.textContent = Math.round(counter.val); },
           });
         });
       },
     });
 
-    // --- Scroll-reveal for card rows (stat cards, category cards) ---
     document.querySelectorAll('.reveal-row').forEach((row) => {
       gsap.from(row.querySelectorAll('.reveal-item'), {
         scrollTrigger: { trigger: row, start: 'top 85%', once: true },
@@ -136,34 +119,11 @@
       });
     });
 
-    // --- "Browse by category" underline sweep ---
     gsap.to('.category-underline', {
       scrollTrigger: { trigger: '.category-heading', start: 'top 90%', once: true },
       scaleX: 1,
       duration: 0.6,
       ease: 'power2.out',
-    });
-
-    // --- Tilt-on-hover for category cards ---
-    document.querySelectorAll('.tilt-card').forEach((card) => {
-      const rotateX = gsap.quickTo(card, 'rotationX', { duration: 0.4, ease: 'power2.out' });
-      const rotateY = gsap.quickTo(card, 'rotationY', { duration: 0.4, ease: 'power2.out' });
-      const lift = gsap.quickTo(card, 'y', { duration: 0.4, ease: 'power2.out' });
-
-      card.addEventListener('mousemove', (e) => {
-        const rect = card.getBoundingClientRect();
-        const px = (e.clientX - rect.left) / rect.width - 0.5;
-        const py = (e.clientY - rect.top) / rect.height - 0.5;
-        rotateY(px * 12);
-        rotateX(py * -12);
-        lift(-4);
-      });
-
-      card.addEventListener('mouseleave', () => {
-        rotateY(0);
-        rotateX(0);
-        lift(0);
-      });
     });
   });
 </script>

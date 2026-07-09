@@ -6,12 +6,18 @@
   "type": "module",
   "scripts": {
     "start": "node app.js",
-    "dev": "nodemon app.js"
+    "dev": "nodemon app.js",
+    "import:drive": "node scripts/importFromDrive.js",
+    "import:drive:dry": "node scripts/importFromDrive.js --dry",
+    "backfill:drive": "node scripts/backfillDriveCategories.js",
+    "backfill:drive:dry": "node scripts/backfillDriveCategories.js --dry"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@google-cloud/local-auth": "^3.0.1",
+    "axios": "^1.18.1",
     "bcrypt": "^5.1.1",
     "cloudinary": "^1.41.3",
     "connect-flash": "^0.1.1",
@@ -22,10 +28,13 @@
     "express-rate-limit": "^7.4.0",
     "express-session": "^1.18.0",
     "express-validator": "^7.3.2",
+    "google-auth-library": "^10.9.0",
+    "googleapis": "^173.0.0",
     "method-override": "^3.0.0",
     "mongoose": "^8.4.0",
     "multer": "^2.2.0",
-    "multer-storage-cloudinary": "^4.0.0"
+    "multer-storage-cloudinary": "^4.0.0",
+    "openai": "^6.45.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.0"

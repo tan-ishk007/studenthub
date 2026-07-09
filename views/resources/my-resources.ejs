@@ -1,17 +1,25 @@
 <%- include('../partials/header') %>
 
-<div class="d-flex justify-content-between align-items-center mb-4">
-  <h2>My Uploads</h2>
+<div class="d-flex justify-content-between align-items-end flex-wrap gap-2 mb-4">
+  <div>
+    <span class="section-kicker">Your shelf</span>
+    <h2 class="mb-0">My Uploads</h2>
+  </div>
   <a href="/resources/new" class="btn btn-primary">Upload New</a>
 </div>
 
 <% if (resources.length === 0) { %>
-  <p class="text-muted">You haven't uploaded anything yet.</p>
+  <div class="card doc-sheet text-center py-5">
+    <div class="card-body">
+      <span class="doc-stamp d-inline-block mb-2">NOTHING FILED YET</span>
+      <p class="doc-meta mb-0">You haven't uploaded anything yet.</p>
+    </div>
+  </div>
 <% } else { %>
-  <div class="row g-3">
+  <div class="row g-3 reveal-row">
     <% resources.forEach(resource => { %>
       <div class="col-md-4">
-        <div class="card h-100 shadow-sm">
+        <div class="card h-100 shadow-sm reveal-item">
           <div class="card-body d-flex flex-column">
             <h5 class="card-title"><%= resource.title %></h5>
             <p class="card-text text-muted small mb-3">

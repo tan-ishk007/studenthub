@@ -1,5 +1,6 @@
 import { body, validationResult } from 'express-validator';
 import { allowedEmails } from '../config/allowedEmails.js';
+import { RESOURCE_CATEGORIES, BRANCHES, MIN_YEAR, MAX_YEAR } from '../config/constants.js';
 
 export const validateRegister = [
   body('name').trim().notEmpty().withMessage('Name is required'),
@@ -32,11 +33,18 @@ export const validateResource = [
   body('title').trim().notEmpty().withMessage('Title is required'),
   body('description').trim().notEmpty().withMessage('Description is required'),
   body('subject').trim().notEmpty().withMessage('Subject is required'),
+  body('branch')
+    .isIn(BRANCHES)
+    .withMessage('Please select a valid branch'),
   body('semester')
     .isInt({ min: 1, max: 8 })
     .withMessage('Semester must be between 1 and 8'),
+  body('year')
+    .optional({ checkFalsy: true })
+    .isInt({ min: MIN_YEAR, max: MAX_YEAR })
+    .withMessage(`Year must be between ${MIN_YEAR} and ${MAX_YEAR}`),
   body('category')
-    .isIn(['Notes', 'PYQs', 'Books', 'Assignments', 'Coding', 'Lab Files', 'Others'])
+    .isIn(RESOURCE_CATEGORIES)
     .withMessage('Please select a valid category'),
 ];
 

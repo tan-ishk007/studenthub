@@ -122,7 +122,7 @@ Then open **http://localhost:3000** 🎉
 
 ## 🔑 Environment Variables
 
-Create a `.env` file in the project root (already gitignored — never commit this):
+Copy `.env.example` to `.env` and fill in real values (`.env` is gitignored — never commit it):
 
 ```env
 MONGO_URI=your_mongodb_connection_string
@@ -133,6 +133,10 @@ CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 PORT=3000
 ```
 
+See `.env.example` for the additional variables used by the Google Drive import (below).
+
+> ⚠️ **If this repo was ever pushed with real Google OAuth credentials hardcoded in `scripts/generateToken.js`, rotate that Client Secret in Google Cloud Console.** It's now read from `.env` instead (`GOOGLE_CLIENT_ID` / `GOOGLE_CLIENT_SECRET`), but an old committed secret in git history stays valid until you rotate it.
+
 ---
 
 ## 👑 Creating an Admin
@@ -140,6 +144,34 @@ PORT=3000
 ```bash
 node scripts/makeAdmin.js <user-email>
 ```
+
+---
+
+## 📥 Importing resources from Google Drive
+
+`scripts/importFromDrive.js` recursively walks a Google Drive folder and imports every file it finds as a real Resource — same as if someone had filled out the "Upload a Resource" form by hand, just automated:
+
+- **Semester** is detected from folder names (e.g. `5TH SEM`) — never guessed by AI, since a wrong guess would misfile a resource permanently. Files where no semester folder is found are skipped and listed in the report for manual review.
+- **Subject** and **Category** start from folder-name heuristics (`scripts/driveClassify.js`) and are cleaned up / filled in by Google's Gemini API when `GEMINI_API_KEY` is set. Category is always one of the app's real categories (Notes, PYQs, Books, Assignments, Coding, Lab Files, Others).
+- **Title** and **Description** are AI-written from the filename and folder context (spelling/casing fixed). Without a Gemini key, the title falls back to a cleaned-up version of the filename and the description falls back to a simple template.
+- The actual file is downloaded from Drive (Google Docs/Slides/Sheets/Drawings are exported to a supported format first) and uploaded to Cloudinary, exactly like a manual upload.
+- Re-running the script is safe — files already imported (matched by their Drive file ID) are skipped, not duplicated.
+
+### One-time setup
+
+1. Create an OAuth client (type "Desktop app") in Google Cloud Console and put its ID/secret in `.env` as `GOOGLE_CLIENT_ID` / `GOOGLE_CLIENT_SECRET`.
+2. Run `node scripts/generateToken.js`, open the printed URL, authorize, and paste the code back in. Save the printed JSON as `scripts/token.json` (gitignored).
+3. Get a Gemini API key from [aistudio.google.com/apikey](https://aistudio.google.com/apikey) and put it in `.env` as `GEMINI_API_KEY` (optional but recommended — see `.env.example`).
+4. Set `DRIVE_FOLDER_ID` and `DRIVE_IMPORT_UPLOADER_EMAIL` in `.env`.
+
+### Running it
+
+```bash
+npm run import:drive:dry   # preview what would be imported — no uploads, no DB writes
+npm run import:drive       # the real thing
+```
+
+Each run writes a full report to `scripts/importReport.json` (gitignored) listing what was imported, skipped, and failed, and why.
 
 ---
 

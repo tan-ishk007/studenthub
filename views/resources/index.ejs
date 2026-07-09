@@ -1,14 +1,17 @@
 <%- include('../partials/header') %>
 
-<div class="d-flex justify-content-between align-items-center mb-4">
-  <h2>All Resources</h2>
+<div class="d-flex justify-content-between align-items-end flex-wrap gap-2 mb-4">
+  <div>
+    <span class="section-kicker">The catalog</span>
+    <h2 class="mb-0">All Resources</h2>
+  </div>
   <% if (currentUser) { %>
     <a href="/resources/new" class="btn btn-primary">Upload New</a>
   <% } %>
 </div>
 
 <form action="/resources" method="GET" class="row g-2 mb-4" id="filterForm">
-  <div class="col-md-3">
+  <div class="col-md-4 col-lg-2">
     <input
       type="text"
       name="search"
@@ -17,7 +20,7 @@
       value="<%= query.search || '' %>"
     />
   </div>
-  <div class="col-md-3">
+  <div class="col-md-4 col-lg-2">
     <input
       type="text"
       name="subject"
@@ -26,7 +29,15 @@
       value="<%= query.subject || '' %>"
     />
   </div>
-  <div class="col-md-2">
+  <div class="col-md-4 col-lg-2">
+    <select name="branch" class="form-select">
+      <option value="">All Branches</option>
+      <% ['CSE', 'ECE', 'EE', 'CE', 'CHE', 'MECH', 'BT', 'PIE'].forEach(b => { %>
+        <option value="<%= b %>" <%= query.branch === b ? 'selected' : '' %>><%= b %></option>
+      <% }) %>
+    </select>
+  </div>
+  <div class="col-md-4 col-lg-2">
     <select name="semester" class="form-select">
       <option value="">All Semesters</option>
       <% for (let i = 1; i <= 8; i++) { %>
@@ -36,7 +47,7 @@
       <% } %>
     </select>
   </div>
-  <div class="col-md-2">
+  <div class="col-md-4 col-lg-2">
     <select name="category" class="form-select">
       <option value="">All Categories</option>
       <% ['Notes', 'PYQs', 'Books', 'Assignments', 'Coding', 'Lab Files', 'Others'].forEach(cat => { %>
@@ -44,23 +55,28 @@
       <% }) %>
     </select>
   </div>
-  <div class="col-md-2 d-flex gap-2">
+  <div class="col-md-4 col-lg-2 d-flex gap-2">
     <button type="submit" class="btn btn-primary flex-fill">Filter</button>
     <a href="/resources" class="btn btn-outline-secondary flex-fill">Reset</a>
   </div>
 </form>
 
 <% if (resources.length === 0) { %>
-  <p class="text-muted">No resources match your filters.</p>
+  <div class="card doc-sheet text-center py-5">
+    <div class="card-body">
+      <span class="doc-stamp d-inline-block mb-2">EMPTY SHELF</span>
+      <p class="doc-meta mb-0">No resources match your filters. Try widening your search.</p>
+    </div>
+  </div>
 <% } else { %>
   <% const tabColors = { Notes: '#D9A441', PYQs: '#B33A3A', Books: '#4C7A4C', Assignments: '#22314F', Coding: '#7A2E2A', 'Lab Files': '#8B8578', Others: '#D9A441' }; %>
-  <div class="row g-3">
+  <div class="row g-3 reveal-row">
     <% resources.forEach(resource => { %>
       <div class="col-md-4 mt-3">
-        <div class="card index-card h-100" style="--tab-color: <%= tabColors[resource.category] || '#D9A441' %>">
+        <div class="card index-card h-100 reveal-item tilt-card" style="--tab-color: <%= tabColors[resource.category] || '#D9A441' %>">
           <span class="corner-tab"><%= resource.category %></span>
           <div class="card-body">
-            <div class="call-number mb-1">SEM <%= resource.semester %> · <%= resource.subject %></div>
+            <div class="call-number mb-1">SEM <%= resource.semester %> · <%= resource.subject %><%= resource.branch ? ' · ' + resource.branch : '' %></div>
             <h5 class="card-title"><%= resource.title %></h5>
             <p class="card-text text-muted small">
               Uploaded by <%= resource.uploadedBy ? resource.uploadedBy.name : 'Unknown' %>
@@ -75,6 +91,30 @@
   </div>
 <% } %>
 <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    if (typeof gsap !== 'undefined') {
+      gsap.registerPlugin(ScrollTrigger);
+      document.querySelectorAll('.reveal-row').forEach((row) => {
+        gsap.from(row.querySelectorAll('.reveal-item'), {
+          scrollTrigger: { trigger: row, start: 'top 88%', once: true },
+          y: 26, opacity: 0, duration: 0.55, stagger: 0.06, ease: 'power2.out',
+        });
+      });
+      document.querySelectorAll('.tilt-card').forEach((card) => {
+        const rotateX = gsap.quickTo(card, 'rotationX', { duration: 0.4, ease: 'power2.out' });
+        const rotateY = gsap.quickTo(card, 'rotationY', { duration: 0.4, ease: 'power2.out' });
+        const lift = gsap.quickTo(card, 'y', { duration: 0.4, ease: 'power2.out' });
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const px = (e.clientX - rect.left) / rect.width - 0.5;
+          const py = (e.clientY - rect.top) / rect.height - 0.5;
+          rotateY(px * 10); rotateX(py * -10); lift(-4);
+        });
+        card.addEventListener('mouseleave', () => { rotateY(0); rotateX(0); lift(0); });
+      });
+    }
+  });
+
   const filterForm = document.getElementById('filterForm');
   const textInputs = filterForm.querySelectorAll('input[type="text"]');
   const selects = filterForm.querySelectorAll('select');

@@ -1,12 +1,15 @@
 import User from '../models/User.js';
 import Resource from '../models/Resource.js';
 
-// Pre-fix uploads stored PDFs/docs under Cloudinary's `image` resource_type,
-// which now 401s on delivery. Any file that isn't a jpg/png but whose URL
-// path contains `/image/upload/` was uploaded before the `raw` vs `image` fix.
+// Pre-fix uploads stored docs (doc/docx/ppt/pptx/etc) under Cloudinary's
+// `image` resource_type, which now 401s on delivery. jpg/png/pdf are
+// *intentionally* uploaded under `image/upload` (see
+// scripts/services/cloudinaryUpload.js) and are fine there. Any other file
+// type whose URL path contains `/image/upload/` was uploaded before the
+// `raw` vs `image` fix and is genuinely broken.
 function isBrokenFileUrl(resource) {
-  const isImageFile = /\.(jpe?g|png)$/i.test(resource.fileName || '');
-  return !isImageFile && resource.fileUrl.includes('/image/upload/');
+  const isImageOrPdfFile = /\.(jpe?g|png|pdf)$/i.test(resource.fileName || '');
+  return !isImageOrPdfFile && resource.fileUrl.includes('/image/upload/');
 }
 
 export const adminDashboard = async (req, res, next) => {

@@ -1,13 +1,14 @@
 <%- include('../partials/header') %>
 
 <div class="mb-4">
+  <span class="section-kicker">Back office</span>
   <h2 class="mb-1">Admin Dashboard</h2>
   <p class="doc-meta">Manage users and moderate uploaded resources.</p>
 </div>
 
-<div class="row g-3 mb-4">
+<div class="row g-3 mb-4 reveal-row">
   <div class="col-sm-3">
-    <div class="card doc-sheet h-100">
+    <div class="card doc-sheet h-100 reveal-item">
       <div class="card-body text-center py-4">
         <div class="call-number mb-1">TOTAL USERS</div>
         <div class="fs-2 fw-bold" style="font-family: var(--font-mono); color: var(--ink-blue);"><%= stats.userCount %></div>
@@ -15,7 +16,7 @@
     </div>
   </div>
   <div class="col-sm-3">
-    <div class="card doc-sheet h-100">
+    <div class="card doc-sheet h-100 reveal-item">
       <div class="card-body text-center py-4">
         <div class="call-number mb-1">TOTAL RESOURCES</div>
         <div class="fs-2 fw-bold" style="font-family: var(--font-mono); color: var(--ink-blue);"><%= stats.resourceCount %></div>
@@ -23,7 +24,7 @@
     </div>
   </div>
   <div class="col-sm-3">
-    <div class="card doc-sheet h-100">
+    <div class="card doc-sheet h-100 reveal-item">
       <div class="card-body text-center py-4">
         <div class="call-number mb-1">ADMINS</div>
         <div class="fs-2 fw-bold" style="font-family: var(--font-mono); color: var(--ink-blue);"><%= stats.adminCount %></div>
@@ -31,7 +32,7 @@
     </div>
   </div>
   <div class="col-sm-3">
-    <div class="card doc-sheet h-100">
+    <div class="card doc-sheet h-100 reveal-item">
       <div class="card-body text-center py-4">
         <div class="call-number mb-1">BROKEN LINKS</div>
         <div class="fs-2 fw-bold" style="font-family: var(--font-mono); color: <%= stats.brokenCount > 0 ? 'var(--margin-red)' : 'var(--ink-blue)' %>;"><%= stats.brokenCount %></div>
@@ -100,6 +101,7 @@
           <tr>
             <th>Title</th>
             <th>Category</th>
+            <th>Branch</th>
             <th>Sem</th>
             <th>Uploaded By</th>
             <th>Date</th>
@@ -109,12 +111,13 @@
         </thead>
         <tbody>
           <% if (resources.length === 0) { %>
-            <tr><td colspan="7" class="text-center text-muted py-3">No resources yet.</td></tr>
+            <tr><td colspan="8" class="text-center text-muted py-3">No resources yet.</td></tr>
           <% } %>
           <% resources.forEach(function(resource) { %>
             <tr>
               <td class="text-truncate" style="max-width: 220px;"><%= resource.title %></td>
               <td><%= resource.category %></td>
+              <td><%= resource.branch || '—' %></td>
               <td><%= resource.semester %></td>
               <td><%= resource.uploadedBy ? resource.uploadedBy.name : 'Unknown' %></td>
               <td><%= resource.createdAt.toISOString().slice(0, 10) %></td>

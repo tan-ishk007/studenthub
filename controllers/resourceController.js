@@ -1,14 +1,18 @@
 import path from 'path';
 import { Readable } from 'stream';
 import Resource from '../models/Resource.js';
+import { RESOURCE_CATEGORIES, BRANCHES } from '../config/constants.js';
 
 export const listResources = async (req, res) => {
   try {
-    const { subject, semester, category, search, page } = req.query;
+    const { subject, branch, semester, category, search, page } = req.query;
     const filter = {};
 
     if (subject) {
       filter.subject = { $regex: subject, $options: 'i' };
+    }
+    if (branch) {
+      filter.branch = branch;
     }
     if (semester) {
       filter.semester = semester;
@@ -46,7 +50,7 @@ export const listResources = async (req, res) => {
 };
 
 export const newResourceForm = (req, res) => {
-  res.render('resources/new');
+  res.render('resources/new', { categories: RESOURCE_CATEGORIES, branches: BRANCHES });
 };
 
 export const createResource = async (req, res) => {
@@ -56,13 +60,15 @@ export const createResource = async (req, res) => {
       return res.redirect('/resources/new');
     }
 
-    const { title, description, subject, semester, category } = req.body;
+    const { title, description, subject, branch, semester, year, category } = req.body;
 
     await Resource.create({
       title,
       description,
       subject,
+      branch,
       semester,
+      year: year || undefined,
       category,
       fileUrl: req.file.path,
       fileName: req.file.originalname,
@@ -138,17 +144,19 @@ export const downloadResource = async (req, res, next) => {
 };
 
 export const editResourceForm = (req, res) => {
-  res.render('resources/edit', { resource: req.resource });
+  res.render('resources/edit', { resource: req.resource, categories: RESOURCE_CATEGORIES, branches: BRANCHES });
 };
 
 export const updateResource = async (req, res) => {
   try {
-    const { title, description, subject, semester, category } = req.body;
+    const { title, description, subject, branch, semester, year, category } = req.body;
 
     req.resource.title = title;
     req.resource.description = description;
     req.resource.subject = subject;
+    req.resource.branch = branch;
     req.resource.semester = semester;
+    req.resource.year = year || undefined;
     req.resource.category = category;
 
     if (req.file) {

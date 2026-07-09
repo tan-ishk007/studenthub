@@ -1,26 +1,29 @@
 <%- include('../partials/header') %>
 
 <div class="row justify-content-center">
-  <div class="col-md-8 col-lg-6">
-    <div class="card shadow-sm">
-      <div class="card-body p-4">
+  <div class="col-md-9 col-lg-7">
+    <div class="card doc-sheet">
+      <div class="card-body p-4 p-md-5">
+        <div class="call-number mb-2">RESOURCE RECORD</div>
         <h2 class="card-title mb-3"><%= resource.title %></h2>
 
-        <p class="mb-2">
-          <span class="badge bg-secondary"><%= resource.category %></span>
-          <span class="badge bg-info text-dark">Semester <%= resource.semester %></span>
+        <p class="mb-3 d-flex flex-wrap gap-2 align-items-center">
+          <span class="badge bg-secondary">sem <%= resource.semester %></span>
+          <% if (resource.branch) { %><span class="badge bg-secondary"><%= resource.branch %></span><% } %>
+          <% if (resource.year) { %><span class="badge bg-secondary"><%= resource.year %></span><% } %>
+          <span class="doc-stamp"><%= resource.category %></span>
         </p>
 
-        <p class="text-muted mb-1"><strong>Subject:</strong> <%= resource.subject %></p>
-        <p class="text-muted mb-3">
+        <p class="doc-meta mb-1"><strong>Subject:</strong> <%= resource.subject %></p>
+        <p class="doc-meta mb-3">
           <strong>Uploaded by:</strong>
           <%= resource.uploadedBy ? resource.uploadedBy.name : 'Unknown' %>
         </p>
 
-        <p class="mb-4"><%= resource.description %></p>
+        <div class="doc-ruled mb-4"><%= resource.description %></div>
 
         <div class="d-flex flex-wrap gap-2">
-          <a href="/resources/<%= resource._id %>/download" class="btn btn-primary">
+          <a href="/resources/<%= resource._id %>/download" class="btn btn-stamp">
             Download <%= resource.fileName %>
           </a>
 

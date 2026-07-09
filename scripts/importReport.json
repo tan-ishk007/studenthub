@@ -1,0 +1,1496 @@
+{
+  "startedAt": "2026-07-09T07:36:59.471Z",
+  "dryRun": true,
+  "imported": [],
+  "wouldImport": [],
+  "skipped": [
+    {
+      "file": "OOPs EndSem.pdf",
+      "path": "Exam-Papers-2025",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "End Sem Papers CSE-3rd Sem 23-24.pdf",
+      "path": "EXAM PAPERS 2023-2024",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "OR MidSem 2025.pdf",
+      "path": "Exam-Papers-2025",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Automata MidSem.pdf",
+      "path": "Exam-Papers-2025",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "OR endsem .pdf",
+      "path": "Exam-Papers-2025",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Analysis Of Algorithms MidSem.pdf",
+      "path": "Exam-Papers-2025",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "CA EndSem.pdf",
+      "path": "Exam-Papers-2025",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "OOPs MidSem.pdf",
+      "path": "Exam-Papers-2025",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Automata EndSem.pdf",
+      "path": "Exam-Papers-2025",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Analysis Of Algorithms EndSem.pdf",
+      "path": "Exam-Papers-2025",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "CA MidSem.pdf",
+      "path": "Exam-Papers-2025",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "OR endsem 2025.pdf",
+      "path": "OPERATION RESEARCH/Exams",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "OR end sem 2023 paper.pdf",
+      "path": "OPERATION RESEARCH/Exams",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "OR mid sem paper.pdf",
+      "path": "OPERATION RESEARCH/Exams",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "OR MidSem 2025.pdf",
+      "path": "OPERATION RESEARCH/Exams",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "OR End sem Q1-Q2-Q3-Q4.pdf",
+      "path": "OPERATION RESEARCH/Pyqs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "or endsem-1.pdf",
+      "path": "OPERATION RESEARCH/Pyqs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "OR midsem-2022-23.pdf",
+      "path": "OPERATION RESEARCH/Pyqs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Operational Research.pdf",
+      "path": "OPERATION RESEARCH/Books",
+      "reason": "file too large (28.4MB)"
+    },
+    {
+      "file": "9-Operations-Research-An-Introduction-10th-Ed.-Hamdy-A-Taha.pdf",
+      "path": "OPERATION RESEARCH/Books",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Game Theory.pdf",
+      "path": "OPERATION RESEARCH/Notes",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "IMG20230918151324.jpg",
+      "path": "OPERATION RESEARCH/Notes",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Queuing Model.pdf",
+      "path": "OPERATION RESEARCH/Notes",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "OR(Till Mid Sem)BK.pdf",
+      "path": "OPERATION RESEARCH/Notes",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Introduction Operation Research.pdf",
+      "path": "OPERATION RESEARCH/Notes",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "IMG20230918151316.jpg",
+      "path": "OPERATION RESEARCH/Notes",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Nonlinear Programming Only.pdf",
+      "path": "OPERATION RESEARCH/Notes",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Project Management.pdf",
+      "path": "OPERATION RESEARCH/Notes",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "OR part2.pdf",
+      "path": "OPERATION RESEARCH/Notes",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "syllabus.pdf",
+      "path": "OPERATION RESEARCH",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "CA EndSem 2025.pdf",
+      "path": "COMPUTER ARCHITECTURE/Exams",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Computer Architecture end sem paper 2023.pdf",
+      "path": "COMPUTER ARCHITECTURE/Exams",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "CA MidSem 2025.pdf",
+      "path": "COMPUTER ARCHITECTURE/Exams",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Computer Architecture mid sem paper.pdf",
+      "path": "COMPUTER ARCHITECTURE/Exams",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "ca_after_midsem (2).pdf",
+      "path": "COMPUTER ARCHITECTURE/Theory/Notes",
+      "reason": "file too large (29.2MB)"
+    },
+    {
+      "file": "CA mid sem notes (1).pdf",
+      "path": "COMPUTER ARCHITECTURE/Theory/Notes",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Dynamic scheduling.pdf",
+      "path": "COMPUTER ARCHITECTURE/Theory/Unit 3/Unit 3",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "uni1-2 Pipelining.pdf",
+      "path": "COMPUTER ARCHITECTURE/Theory/Unit 3/Unit 3",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "DS with Speculative Exec.pdf",
+      "path": "COMPUTER ARCHITECTURE/Theory/Unit 3/Unit 3",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Unit 2- part 1.pptx",
+      "path": "COMPUTER ARCHITECTURE/Theory/Unit-2/Unit-2",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "ISA.pdf",
+      "path": "COMPUTER ARCHITECTURE/Theory/Unit-2/Unit-2",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Unit 1- part 1.pdf",
+      "path": "COMPUTER ARCHITECTURE/Theory/Unit 1/Unit 1",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Unit 1-part 2.pdf",
+      "path": "COMPUTER ARCHITECTURE/Theory/Unit 1/Unit 1",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Processors_Basic (1).pdf",
+      "path": "COMPUTER ARCHITECTURE/Theory",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Shared memory and Cache coherence (1).pdf",
+      "path": "COMPUTER ARCHITECTURE/Theory",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Algo_syllabus_New.pdf",
+      "path": "ANALYSIS OF ALGORITHMS/Syllabus",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Analysis Of Algorithms EndSem 2025.pdf",
+      "path": "ANALYSIS OF ALGORITHMS/Exams",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Analysis Of Algorithms MidSem 2025. pdf",
+      "path": "ANALYSIS OF ALGORITHMS/Exams",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Algo mid sem paper.pdf",
+      "path": "ANALYSIS OF ALGORITHMS/Exams",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Algo end sem paper 2023.pdf",
+      "path": "ANALYSIS OF ALGORITHMS/Exams",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Algorithms class Notes _231213_002006 (1).pdf",
+      "path": "ANALYSIS OF ALGORITHMS/Notes",
+      "reason": "file too large (26.5MB)"
+    },
+    {
+      "file": "algo notes end sem (updated) (1).pdf",
+      "path": "ANALYSIS OF ALGORITHMS/Notes",
+      "reason": "file too large (55.4MB)"
+    },
+    {
+      "file": "Algo Notes by Scribe (1).pdf",
+      "path": "ANALYSIS OF ALGORITHMS/Notes",
+      "reason": "file too large (40.2MB)"
+    },
+    {
+      "file": "Algorithms by Thomas H coreman.pdf",
+      "path": "ANALYSIS OF ALGORITHMS/Books",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Assignment 5-reduced grammar.pdf",
+      "path": "AUTOMATA THEORY/Assignments",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Assignment 3_regular grammar.pdf",
+      "path": "AUTOMATA THEORY/Assignments",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Assingment 1.pdf",
+      "path": "AUTOMATA THEORY/Assignments",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Assingment2.pdf",
+      "path": "AUTOMATA THEORY/Assignments",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Assignment 4-CFL.pdf",
+      "path": "AUTOMATA THEORY/Assignments",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "AUTOMATA  ASSIGNMENT QUESTIONS1.pdf",
+      "path": "AUTOMATA THEORY/Assignments",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Automata_Assignment.pdf",
+      "path": "AUTOMATA THEORY/Assignments",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Automata Theory.pdf",
+      "path": "AUTOMATA THEORY/Syllabus",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "AutoMeta Mid-Sem.pdf",
+      "path": "AUTOMATA THEORY/Theory(Notes)",
+      "reason": "file too large (44.2MB)"
+    },
+    {
+      "file": "Automata_Notes_Puskar.pdf",
+      "path": "AUTOMATA THEORY/Theory(Notes)",
+      "reason": "file too large (95.5MB)"
+    },
+    {
+      "file": "Automata(Till Mid Sem)BK.pdf",
+      "path": "AUTOMATA THEORY/Theory(Notes)",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Automata EndSem 2025.pdf",
+      "path": "AUTOMATA THEORY/Exams",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Automata mid sem paper.pdf",
+      "path": "AUTOMATA THEORY/Exams",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Automata MidSem 2025.pdf",
+      "path": "AUTOMATA THEORY/Exams",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Automata End sem paper 2023 (1).pdf",
+      "path": "AUTOMATA THEORY/Exams",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "ENDSEM, 2K20-21.pdf",
+      "path": "DS THEORY/PAPERS",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "ESE 20-21 DS.pdf",
+      "path": "DS THEORY/PAPERS",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Data Structures and Algorithms - Narasimha Karumanchi.pdf",
+      "path": "DS THEORY/BOOKS",
+      "reason": "file too large (32.7MB)"
+    },
+    {
+      "file": "Data structure by reema thareja.pdf",
+      "path": "DS THEORY/BOOKS",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Introduction to Data Structure_L2.pptx",
+      "path": "DS THEORY/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "DS-10-SEARCHING-SORTING.pptx",
+      "path": "DS THEORY/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Ds merged notes.pdf",
+      "path": "DS THEORY/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Chapter 14 - Graphs.pdf",
+      "path": "DS THEORY/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Chapter 10 - Queues.ppt",
+      "path": "DS THEORY/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Chapter 11-  Trees.ppt",
+      "path": "DS THEORY/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Chapter 9 - Stack (1).ppt",
+      "path": "DS THEORY/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Chapter 6 - Link List.ppt",
+      "path": "DS THEORY/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "postfix.cpp",
+      "path": "DS THEORY/NOTES/Basic implementations",
+      "reason": "unsupported file type (.cpp, application/octet-stream)"
+    },
+    {
+      "file": "bst insert.cpp",
+      "path": "DS THEORY/NOTES/Basic implementations",
+      "reason": "unsupported file type (.cpp, application/octet-stream)"
+    },
+    {
+      "file": "bst delete.cpp",
+      "path": "DS THEORY/NOTES/Basic implementations",
+      "reason": "unsupported file type (.cpp, application/octet-stream)"
+    },
+    {
+      "file": "Stack.cpp",
+      "path": "DS THEORY/NOTES/Basic implementations",
+      "reason": "unsupported file type (.cpp, application/octet-stream)"
+    },
+    {
+      "file": "LinkedList.cpp",
+      "path": "DS THEORY/NOTES/Basic implementations",
+      "reason": "unsupported file type (.cpp, application/octet-stream)"
+    },
+    {
+      "file": "queue.cpp",
+      "path": "DS THEORY/NOTES/Basic implementations",
+      "reason": "unsupported file type (.cpp, application/octet-stream)"
+    },
+    {
+      "file": "polyadd.cpp",
+      "path": "DS THEORY/NOTES/Basic implementations",
+      "reason": "unsupported file type (.cpp, application/octet-stream)"
+    },
+    {
+      "file": "Non Recursive Traversal.pdf",
+      "path": "DS THEORY/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "linkedList.pdf",
+      "path": "DS THEORY/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "hashing.pdf",
+      "path": "DS THEORY/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "heaps.pdf",
+      "path": "DS THEORY/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Introduction to DS and Algorithms.pdf",
+      "path": "DS THEORY/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "trees.pdf",
+      "path": "DS THEORY/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "min spanning tree in graphs.pdf",
+      "path": "DS THEORY/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "20194167_Rishi Garg_Assignment3.zip",
+      "path": "DS THEORY/MISC/assignments solutions",
+      "reason": "unsupported file type (.zip, application/x-zip-compressed)"
+    },
+    {
+      "file": "Rishi Garg_20194167_Home Assignment 3.pdf",
+      "path": "DS THEORY/MISC/assignments solutions",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Assignment6_20194167_Rishi Garg.docx",
+      "path": "DS THEORY/MISC/assignments solutions",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "20194167_Rishi Garg_Assignment 7.pdf",
+      "path": "DS THEORY/MISC/assignments solutions",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "20194167_Rishi Garg_Home Assignment2.pdf",
+      "path": "DS THEORY/MISC/assignments solutions",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "20194167_Rishi Garg_Assignment4.zip",
+      "path": "DS THEORY/MISC/assignments solutions",
+      "reason": "unsupported file type (.zip, application/x-zip-compressed)"
+    },
+    {
+      "file": "20194167_Rishi Garg_Assignment1.zip",
+      "path": "DS THEORY/MISC/assignments solutions",
+      "reason": "unsupported file type (.zip, application/x-zip-compressed)"
+    },
+    {
+      "file": "20194167_Rishi Garg_Assignment2.zip",
+      "path": "DS THEORY/MISC/assignments solutions",
+      "reason": "unsupported file type (.zip, application/x-zip-compressed)"
+    },
+    {
+      "file": "20194167_Rishi Garg_Ass10.docx",
+      "path": "DS THEORY/MISC/assignments solutions",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Assignment6_20194167_Rishi Garg.pdf",
+      "path": "DS THEORY/MISC/assignments solutions",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "20194167_Rishi Garg_Assignment8.rtf",
+      "path": "DS THEORY/MISC/assignments solutions",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "20194167_Rishi Garg_Assignment11.docx",
+      "path": "DS THEORY/MISC/assignments solutions",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "20194167_Rishi Garg_Assignment 9.docx",
+      "path": "DS THEORY/MISC/assignments solutions",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "20194167_Rishi Garg_Home Assignment 4.pdf",
+      "path": "DS THEORY/MISC/assignments solutions",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Home Assignment 5.pdf",
+      "path": "DS THEORY/MISC/assignments questions pdfs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Assignment 4.pdf",
+      "path": "DS THEORY/MISC/assignments questions pdfs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Assignment 5.pdf",
+      "path": "DS THEORY/MISC/assignments questions pdfs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Assignment 6.pdf",
+      "path": "DS THEORY/MISC/assignments questions pdfs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Assignment 1.pdf",
+      "path": "DS THEORY/MISC/assignments questions pdfs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Assignment 10.pdf",
+      "path": "DS THEORY/MISC/assignments questions pdfs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Home Assignment 2 1.pdf",
+      "path": "DS THEORY/MISC/assignments questions pdfs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Assignment 9.pdf",
+      "path": "DS THEORY/MISC/assignments questions pdfs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Assignment 11.pdf",
+      "path": "DS THEORY/MISC/assignments questions pdfs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Assignment 8.pdf",
+      "path": "DS THEORY/MISC/assignments questions pdfs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Assignment 7.pdf",
+      "path": "DS THEORY/MISC/assignments questions pdfs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Assignment 3.pdf",
+      "path": "DS THEORY/MISC/assignments questions pdfs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Assignment 2.pdf",
+      "path": "DS THEORY/MISC/assignments questions pdfs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Home Assignment 4.pdf",
+      "path": "DS THEORY/MISC/assignments questions pdfs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Home Assignment 3.pdf",
+      "path": "DS THEORY/MISC/assignments questions pdfs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "NOTES1.pdf",
+      "path": "FOLT/NOTES/Handwritten",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "PROPOSITION.pdf",
+      "path": "FOLT/NOTES/Handwritten",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "NOTES2.pdf",
+      "path": "FOLT/NOTES/Handwritten",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "ALGEBRA.pdf",
+      "path": "FOLT/NOTES/Handwritten",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "SETS AND REALTIONS.pdf",
+      "path": "FOLT/NOTES/Handwritten",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Proposional_Logic.pdf",
+      "path": "FOLT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Algebra.pdf",
+      "path": "FOLT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Logic_Applications.pdf",
+      "path": "FOLT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Lattice_Chapter_Schaum_s.pdf",
+      "path": "FOLT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Proofs.pdf",
+      "path": "FOLT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Predicates.pdf",
+      "path": "FOLT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Sets_Functions.pdf",
+      "path": "FOLT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Relations.pdf",
+      "path": "FOLT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Relations_Exercise_Class.pdf",
+      "path": "FOLT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Solution -- 7th edition.pdf",
+      "path": "FOLT/BOOKS",
+      "reason": "file too large (29.4MB)"
+    },
+    {
+      "file": "Discrete mathematics -- Rosen_1.pdf",
+      "path": "FOLT/BOOKS",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Schaum_s Discrete Mathematics.pdf",
+      "path": "FOLT/BOOKS",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tremplay_manohar.pdf",
+      "path": "FOLT/BOOKS",
+      "reason": "file too large (30.5MB)"
+    },
+    {
+      "file": "Schaums Abstract Algebra Book.pdf",
+      "path": "FOLT/BOOKS",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "ENDSEM, 2K20-21.pdf",
+      "path": "FOLT/PAPERS",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "ESE 20-21 DS LAB.pdf",
+      "path": "DS LAB",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_Management_of_IT_Industries_Assignment_04.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/Management_of_IT_Industries",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_ADE_Theory_Assignment_01.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/ADE",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_Management_of_IT_Industries_Assignment_02.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/Management_of_IT_Industries",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_Management_of_IT_Industries_Assignment_01.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/Management_of_IT_Industries",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_Management_of_IT_Industries_Assignment_03.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/Management_of_IT_Industries",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_DS_Lab_Assignemnt_07.zip",
+      "path": "ALL ASSIGNMENTS 2K20-21/DS_Lab",
+      "reason": "unsupported file type (.zip, application/x-zip-compressed)"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_DS_Lab_Assignemnt_08.zip",
+      "path": "ALL ASSIGNMENTS 2K20-21/DS_Lab",
+      "reason": "unsupported file type (.zip, application/x-zip-compressed)"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_DS_Lab_Assignemnt_14.zip",
+      "path": "ALL ASSIGNMENTS 2K20-21/DS_Lab",
+      "reason": "unsupported file type (.zip, application/x-zip-compressed)"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_DS_Lab_Assignemnt_09.zip",
+      "path": "ALL ASSIGNMENTS 2K20-21/DS_Lab",
+      "reason": "unsupported file type (.zip, application/x-zip-compressed)"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_DS_Lab_Assignemnt_04.zip",
+      "path": "ALL ASSIGNMENTS 2K20-21/DS_Lab",
+      "reason": "unsupported file type (.zip, application/x-zip-compressed)"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_DS_Lab_Assignemnt_02.zip",
+      "path": "ALL ASSIGNMENTS 2K20-21/DS_Lab",
+      "reason": "unsupported file type (.zip, application/x-zip-compressed)"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_DS_Lab_Assignemnt_Practice.zip",
+      "path": "ALL ASSIGNMENTS 2K20-21/DS_Lab",
+      "reason": "unsupported file type (.zip, application/x-zip-compressed)"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_DS_Lab_Assignemnt_03.zip",
+      "path": "ALL ASSIGNMENTS 2K20-21/DS_Lab",
+      "reason": "unsupported file type (.zip, application/x-zip-compressed)"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_FOLT_Assignment_08.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/Foundation_Of_Logical_Thought",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_FOLT_Assignment_09.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/Foundation_Of_Logical_Thought",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_FOLT_Assignment_10.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/Foundation_Of_Logical_Thought",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_FOLT_Short_Assignment_01.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/Foundation_Of_Logical_Thought",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_FOLT_Assignment_05.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/Foundation_Of_Logical_Thought",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_FOLT_Assignment_04.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/Foundation_Of_Logical_Thought",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_FOLT_Assignment_01.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/Foundation_Of_Logical_Thought",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_Assignment_07.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/Foundation_Of_Logical_Thought",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_FOLT_Assignment_03.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/Foundation_Of_Logical_Thought",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_FOLT_Assignment_06.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/Foundation_Of_Logical_Thought",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_FOLT_Assignment_02.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/Foundation_Of_Logical_Thought",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_ADE-Lab_Report.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/ADE_Lab",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "some1.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/ADE_Lab",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_ADE-LAB_Experiment_09.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/ADE_Lab",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_ADE-LAB_Experiment_08.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/ADE_Lab",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_ADE-LAB_Experiment_07.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/ADE_Lab",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_ADE-LAB_Experiment_12.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/ADE_Lab",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_ADE-LAB_Experiment_10.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/ADE_Lab",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_Practice.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/OOP_Lab",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_ADE-LAB_Experiment_11.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/ADE_Lab",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_OOP-Lab_Assignment_06.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/OOP_Lab",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_OOP_Lab_Assignment_07.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/OOP_Lab",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_OOP_Lab_Assignment_09.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/OOP_Lab",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_OOP_Lab_Assignment_03.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/OOP_Lab",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_OOP-Lab_Assignment_01.zip",
+      "path": "ALL ASSIGNMENTS 2K20-21/OOP_Lab",
+      "reason": "unsupported file type (.zip, application/x-zip-compressed)"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_OOP_Lab_Assignment_05.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/OOP_Lab",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_OOP-Lab_Assignment_AWTCalculator.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/OOP_Lab",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_OOP_Lab_Assignment_02.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/OOP_Lab",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_OOP_Lab_Assignment_04.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/OOP_Lab",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_Data_Structures_Assignment_02.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/DS",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_Data_Structures_Quiz_Assessment_02.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/DS",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_Data_Structures_Quiz_Assessment.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/DS",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Tushar_Lalwani_20208075_Data_Structures_Assignment_01.pdf",
+      "path": "ALL ASSIGNMENTS 2K20-21/DS",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Book on Supply Management.pdf",
+      "path": "MOIT/BOOKS",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "ESE 20-21 OOP LAB.docx",
+      "path": "OOP LAB",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Ellen A. Benowitz - Principles of Management-Hungry Minds (2001).pdf",
+      "path": "MOIT/BOOKS",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Handwritten notes.pdf",
+      "path": "MOIT/NOTES",
+      "reason": "file too large (48.3MB)"
+    },
+    {
+      "file": "NOTES.pdf",
+      "path": "MOIT/NOTES/Handwritten",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Supply chain Management.pptx",
+      "path": "MOIT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "HRM_4.pdf",
+      "path": "MOIT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Envirormental issues and Pollution control acts.pptx",
+      "path": "MOIT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Responsibility assignment matrix.pptx",
+      "path": "MOIT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "HRM_3.pdf",
+      "path": "MOIT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Management Resources-1.pdf",
+      "path": "MOIT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "supply_chain_management_tutorial.pdf",
+      "path": "MOIT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Management_styles.pdf",
+      "path": "MOIT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Green IT-The Way Forward.ppt",
+      "path": "MOIT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "E SCM.docx",
+      "path": "MOIT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Green Computing.ppt",
+      "path": "MOIT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Project-team.pdf",
+      "path": "MOIT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Production Systems.pdf",
+      "path": "MOIT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "IT Supply chain Management.pptx",
+      "path": "MOIT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Management Resources-2.pdf",
+      "path": "MOIT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Case Study - Ocean Spray.pdf",
+      "path": "MOIT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Quality Control Tools and Acceptance Sampling.pptx",
+      "path": "MOIT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Case Study - CooperTires.pdf",
+      "path": "MOIT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Project Quality Management.pptx",
+      "path": "MOIT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "HRM_2.pdf",
+      "path": "MOIT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Introduction Quality Management.pptx",
+      "path": "MOIT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "HRM_1.pdf",
+      "path": "MOIT/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "ESE 20-21 MOIT.pdf",
+      "path": "MOIT/PAPERS",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Lecture_15_16_Final_exception_file (1).pptx",
+      "path": "OOP THEORY/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "GUI.pptx",
+      "path": "OOP THEORY/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Lecture_11_14_String_Inheritance_relations.ppt",
+      "path": "OOP THEORY/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Lecture_01_04_ Overview.ppt",
+      "path": "OOP THEORY/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "lecture_05_07_Java_class.ppt",
+      "path": "OOP THEORY/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Lecture_08_10_garbag_array.ppt",
+      "path": "OOP THEORY/NOTES",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "OPPs(Java) end sem paper 2023.pdf",
+      "path": "OOP THEORY/Papers",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "OOPs(Java) mid sem paper.pdf",
+      "path": "OOP THEORY/Papers",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "ENDSEM, 2K20-21.docx",
+      "path": "OOP THEORY/Papers",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "ESE 20-21 OOP.pdf",
+      "path": "OOP THEORY/Papers",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Java - The Complete Reference, Ninth Edition.pdf",
+      "path": "OOP THEORY/BOOKS",
+      "reason": "file too large (39.1MB)"
+    },
+    {
+      "file": "Theory assignment-2.pdf",
+      "path": "OOP THEORY/MISC/assignments questions pdfs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Ass5.pdf",
+      "path": "OOP THEORY/MISC/assignments questions pdfs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Ass 7.pdf",
+      "path": "OOP THEORY/MISC/assignments questions pdfs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Ass1.docx",
+      "path": "OOP THEORY/MISC/assignments questions pdfs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Ass4.pdf",
+      "path": "OOP THEORY/MISC/assignments questions pdfs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Ass-9.pdf",
+      "path": "OOP THEORY/MISC/assignments questions pdfs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Ass-8.pdf",
+      "path": "OOP THEORY/MISC/assignments questions pdfs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Ass2.pdf",
+      "path": "OOP THEORY/MISC/assignments questions pdfs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "TheoryAssignment-4.docx",
+      "path": "OOP THEORY/MISC/assignments questions pdfs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Theory assignment-1 1.pdf",
+      "path": "OOP THEORY/MISC/assignments questions pdfs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Ass3.pdf",
+      "path": "OOP THEORY/MISC/assignments questions pdfs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Rishi Garg_20194167_Assignment2.zip",
+      "path": "OOP THEORY/MISC/assignments solutions",
+      "reason": "unsupported file type (.zip, application/x-zip-compressed)"
+    },
+    {
+      "file": "Rishi Garg_20194167_Assignment7.zip",
+      "path": "OOP THEORY/MISC/assignments solutions",
+      "reason": "unsupported file type (.zip, application/x-zip-compressed)"
+    },
+    {
+      "file": "20194167_Rishi Garg_Home Assignment 1.pdf",
+      "path": "OOP THEORY/MISC/assignments solutions",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Rishi Garg_20194167_Assignment8.zip",
+      "path": "OOP THEORY/MISC/assignments solutions",
+      "reason": "unsupported file type (.zip, application/x-zip-compressed)"
+    },
+    {
+      "file": "Rishi Garg_20194167_Assignment4.zip",
+      "path": "OOP THEORY/MISC/assignments solutions",
+      "reason": "unsupported file type (.zip, application/x-zip-compressed)"
+    },
+    {
+      "file": "20194167_Rishi Garg_Home Assignment 3.zip",
+      "path": "OOP THEORY/MISC/assignments solutions",
+      "reason": "unsupported file type (.zip, application/x-zip-compressed)"
+    },
+    {
+      "file": "Rishi Garg_20194167_Assignment9.zip",
+      "path": "OOP THEORY/MISC/assignments solutions",
+      "reason": "unsupported file type (.zip, application/x-zip-compressed)"
+    },
+    {
+      "file": "Rishi Garg_20194167_Assignment1.zip",
+      "path": "OOP THEORY/MISC/assignments solutions",
+      "reason": "unsupported file type (.zip, application/x-zip-compressed)"
+    },
+    {
+      "file": "Rishi Garg_20194167_Assignment6.zip",
+      "path": "OOP THEORY/MISC/assignments solutions",
+      "reason": "unsupported file type (.zip, application/x-zip-compressed)"
+    },
+    {
+      "file": "Rishi Garg_20194167_Assignment5.zip",
+      "path": "OOP THEORY/MISC/assignments solutions",
+      "reason": "unsupported file type (.zip, application/x-zip-compressed)"
+    },
+    {
+      "file": "20194167_Rishi Garg_Home Assignment 2.pdf",
+      "path": "OOP THEORY/MISC/assignments solutions",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Analog and Digital Electronics (Lec-3).pdf",
+      "path": "ADE/NOTES/ANAND SHARMA",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Analog and Digital Electronics (Lec-18).pdf",
+      "path": "ADE/NOTES/ANAND SHARMA",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Analog and Digital Electronics (Lec-1).pdf",
+      "path": "ADE/NOTES/ANAND SHARMA",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Analog and Digital Electronics (Lec-17).pdf",
+      "path": "ADE/NOTES/ANAND SHARMA",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Analog and Digital Electronics Lec-27.pdf",
+      "path": "ADE/NOTES/ANAND SHARMA",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Analog and Digital Electronics (Lec-21).pdf",
+      "path": "ADE/NOTES/ANAND SHARMA",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Analog and Digital Electronics (Lec-8).pdf",
+      "path": "ADE/NOTES/ANAND SHARMA",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Analog and Digital Electronics (Lec-22).pdf",
+      "path": "ADE/NOTES/ANAND SHARMA",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Analog and Digital Electronics Lec-26.pdf",
+      "path": "ADE/NOTES/ANAND SHARMA",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Analog and Digital Electronics (Lec-2).pdf",
+      "path": "ADE/NOTES/ANAND SHARMA",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Analog and Digital Electronics (Lec-15).pdf",
+      "path": "ADE/NOTES/ANAND SHARMA",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Analog and Digital Electronics (Lec-28).pdf",
+      "path": "ADE/NOTES/ANAND SHARMA",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Analog and Digital Electronics Lec-25.pdf",
+      "path": "ADE/NOTES/ANAND SHARMA",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Analog and Digital Electronics (Lec-5).pdf",
+      "path": "ADE/NOTES/ANAND SHARMA",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Analog and Digital Electronics (Lec-14).pdf",
+      "path": "ADE/NOTES/ANAND SHARMA",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Analog and Digital Electronics Lecture.pdf",
+      "path": "ADE/NOTES/ANAND SHARMA",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Analog and Digital Electronics (Lec-12).pdf",
+      "path": "ADE/NOTES/ANAND SHARMA",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Analog and Digital Electronics (Lec-4).pdf",
+      "path": "ADE/NOTES/ANAND SHARMA",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Analog and Digital Electronics (Lec-11).pdf",
+      "path": "ADE/NOTES/ANAND SHARMA",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Analog and Digital Electronics (Lec-13).pdf",
+      "path": "ADE/NOTES/ANAND SHARMA",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Analog and Digital Electronics (Lec-23).pdf",
+      "path": "ADE/NOTES/ANAND SHARMA",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Analog and Digital Electronics (Lecture-2).pdf",
+      "path": "ADE/NOTES/ANAND SHARMA",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Analog and Digital Electronics (Lecture-1).pdf",
+      "path": "ADE/NOTES/ANAND SHARMA",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Combinational Circuits 3.pdf",
+      "path": "ADE/NOTES/RAJIV SIR",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Semiconductor and pn junction diode.pdf",
+      "path": "ADE/NOTES/RAJIV SIR",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Numer System and Codes.pdf",
+      "path": "ADE/NOTES/RAJIV SIR",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Number System.pdf",
+      "path": "ADE/NOTES/RAJIV SIR",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Combinational Circuit .pdf",
+      "path": "ADE/NOTES/RAJIV SIR",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Sequential circuit 2.pdf",
+      "path": "ADE/NOTES/RAJIV SIR",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "EC 13103 Lecture 1.ppt",
+      "path": "ADE/NOTES/RAJIV SIR",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Boolean Algebra and Venn Diagram.pdf",
+      "path": "ADE/NOTES/RAJIV SIR",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "KMAP.pdf",
+      "path": "ADE/NOTES/RAJIV SIR",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Sequential Circuit 1.pdf",
+      "path": "ADE/NOTES/RAJIV SIR",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Logic Gates.pdf",
+      "path": "ADE/NOTES/RAJIV SIR",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Combinational Circuits 4.pdf",
+      "path": "ADE/NOTES/RAJIV SIR",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Sequential circuit 03.pdf",
+      "path": "ADE/NOTES/RAJIV SIR",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Diode circuits and its applications.pdf",
+      "path": "ADE/NOTES/RAJIV SIR",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Combinational Circuit 2.pdf",
+      "path": "ADE/NOTES/RAJIV SIR",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "ENDSEM, 2K20-21.pdf",
+      "path": "ADE/PAPERS",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "ESE 20-21 ADE.pdf",
+      "path": "ADE/PAPERS",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Digital Design by Morris Mano (Fifth Edition).pdf",
+      "path": "ADE/BOOKS",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Rishi Garg_20194167_ADE Home Assignment 1.pdf",
+      "path": "ADE/MISC/assignments answers",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Rishi Garg_HomeAssignment-3.pdf",
+      "path": "ADE/MISC/assignments answers",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Assignment 3.pdf",
+      "path": "ADE/MISC/assignment questions pdfs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    },
+    {
+      "file": "Assignment 2.pdf",
+      "path": "ADE/MISC/assignment questions pdfs",
+      "reason": "no semester folder detected in its Drive path — needs manual review"
+    }
+  ],
+  "failed": [],
+  "alreadyImported": 0,
+  "finishedAt": "2026-07-09T07:37:06.466Z"
+}

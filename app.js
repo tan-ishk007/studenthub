@@ -14,6 +14,7 @@ import resourceRoutes from './routes/resourceRoutes.js';
 import profileRoutes from './routes/profileRoutes.js';
 import adminRoutes from './routes/adminRoutes.js';
 import { notFound, errorHandler } from './middleware/errorHandler.js';
+import driveRoutes from "./routes/driveRoutes.js";
 
 dotenv.config();
 
@@ -77,6 +78,7 @@ app.use(async (req, res, next) => {
   next();
 });
 
+app.use("/drive", driveRoutes);
 app.use('/', indexRoutes);
 app.use('/', authRoutes);
 app.use('/', resourceRoutes);

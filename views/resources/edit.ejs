@@ -1,10 +1,13 @@
 <%- include('../partials/header') %>
 
-<div class="row justify-content-center">
+<div class="row justify-content-center py-3">
   <div class="col-md-8 col-lg-6">
+    <div class="text-center mb-4">
+      <span class="section-kicker">Amend the record</span>
+      <h2 class="mb-0" style="font-size: clamp(1.8rem, 4vw, 2.6rem);">Edit Resource</h2>
+    </div>
     <div class="card shadow-sm">
       <div class="card-body p-4">
-        <h2 class="card-title mb-4 text-center">Edit Resource</h2>
         <form action="/resources/<%= resource._id %>?_method=PUT" method="POST" enctype="multipart/form-data">
           <div class="mb-3">
             <label for="title" class="form-label">Title</label>
@@ -22,6 +25,15 @@
           </div>
 
           <div class="mb-3">
+            <label for="branch" class="form-label">Branch</label>
+            <select class="form-select" id="branch" name="branch" required>
+              <% branches.forEach(b => { %>
+                <option value="<%= b %>" <%= resource.branch === b ? 'selected' : '' %>><%= b %></option>
+              <% }) %>
+            </select>
+          </div>
+
+          <div class="mb-3">
             <label for="semester" class="form-label">Semester</label>
             <select class="form-select" id="semester" name="semester" required>
               <% for (let i = 1; i <= 8; i++) { %>
@@ -31,9 +43,14 @@
           </div>
 
           <div class="mb-3">
+            <label for="year" class="form-label">Year <span class="text-muted small">(optional — e.g. 2025)</span></label>
+            <input type="number" class="form-control" id="year" name="year" min="2000" value="<%= resource.year || '' %>" placeholder="e.g. 2025" />
+          </div>
+
+          <div class="mb-3">
             <label for="category" class="form-label">Category</label>
             <select class="form-select" id="category" name="category" required>
-              <% ['Notes', 'PYQs', 'Books', 'Assignments', 'Coding', 'Lab Files', 'Others'].forEach(cat => { %>
+              <% categories.forEach(cat => { %>
                 <option value="<%= cat %>" <%= resource.category === cat ? 'selected' : '' %>><%= cat %></option>
               <% }) %>
             </select>
